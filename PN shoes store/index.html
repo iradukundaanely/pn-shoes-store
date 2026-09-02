@@ -1,0 +1,391 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PN Shoes Store | Step Into Your Style</title>
+
+    <meta
+        name="description"
+        content="PN Shoes Store - Sneakers, running shoes, sports shoes, casual footwear and baby shoes."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    Free delivery on selected orders • Welcome to PN Shoes Store
+</div>
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            PN <span>SHOES</span>
+        </a>
+
+        <nav id="mainNav">
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="#categories">Categories</a>
+                </li>
+
+                <li>
+                    <a href="#featured">Featured</a>
+                </li>
+
+                <li>
+                    <a href="account.html">Account</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <a
+                href="shop.html"
+                class="icon-btn"
+                aria-label="Search"
+            >
+                🔍
+            </a>
+
+            <a
+                href="cart.html"
+                class="icon-btn cart-icon"
+                aria-label="Shopping Cart"
+            >
+                🛒
+                <span id="cartCount" class="cart-count">0</span>
+            </a>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Open menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <small>PN SHOES COLLECTION</small>
+
+                <h1>
+                    Step Into
+                    <br>
+                    Your Style.
+                </h1>
+
+                <p>
+                    Discover modern sneakers, running shoes,
+                    sports footwear, casual shoes and
+                    comfortable baby shoes.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-primary"
+                    >
+                        Shop Now
+                    </a>
+
+                    <a
+                        href="#featured"
+                        class="btn btn-outline"
+                    >
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="images/banners/hero.jpg"
+                    alt="PN Shoes Collection"
+                    onerror="this.style.display='none'"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section
+        class="section"
+        id="categories"
+    >
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <small>SHOP BY CATEGORY</small>
+
+                <h2>
+                    Find Your Perfect Pair
+                </h2>
+
+                <p>
+                    Explore footwear for every style and occasion.
+                </p>
+
+            </div>
+
+
+            <div class="categories">
+
+                <a
+                    href="shop.html?category=Running"
+                    class="category-card"
+                >
+                    <span class="category-icon">🏃</span>
+                    <h3>Running</h3>
+                    <p>Move faster. Feel lighter.</p>
+                </a>
+
+
+                <a
+                    href="shop.html?category=Sneakers"
+                    class="category-card"
+                >
+                    <span class="category-icon">👟</span>
+                    <h3>Sneakers</h3>
+                    <p>Modern everyday style.</p>
+                </a>
+
+
+                <a
+                    href="shop.html?category=Sports"
+                    class="category-card"
+                >
+                    <span class="category-icon">⚽</span>
+                    <h3>Sports</h3>
+                    <p>Built for active days.</p>
+                </a>
+
+
+                <a
+                    href="shop.html?category=Casual"
+                    class="category-card"
+                >
+                    <span class="category-icon">👞</span>
+                    <h3>Casual</h3>
+                    <p>Simple and comfortable.</p>
+                </a>
+
+
+                <a
+                    href="shop.html?category=Baby%20Shoes"
+                    class="category-card"
+                >
+                    <span class="category-icon">🧸</span>
+                    <h3>Baby Shoes</h3>
+                    <p>Comfortable little steps.</p>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED -->
+
+    <section
+        class="section"
+        id="featured"
+    >
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <small>FEATURED COLLECTION</small>
+
+                <h2>
+                    Popular Shoes
+                </h2>
+
+                <p>
+                    Discover some of our featured products.
+                </p>
+
+            </div>
+
+
+            <div
+                id="productsGrid"
+                class="products-grid"
+            ></div>
+
+
+            <div class="center-button">
+
+                <a
+                    href="shop.html"
+                    class="btn btn-primary"
+                >
+                    View All Shoes
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMOTION -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="promotion-box">
+
+                <small>PN SPECIAL</small>
+
+                <h2>
+                    Your next pair is waiting.
+                </h2>
+
+                <p>
+                    Browse our latest collection and
+                    discover your next favorite pair.
+                </p>
+
+                <a
+                    href="shop.html"
+                    class="btn btn-accent"
+                >
+                    Shop Collection
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>PN SHOES</h3>
+
+                <p>
+                    Modern footwear for everyday life,
+                    sports, running, street style and
+                    little feet.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="shop.html">All Shoes</a>
+                <a href="shop.html?category=Running">Running</a>
+                <a href="shop.html?category= Sneakers">Sneakers</a>
+                <a href="shop.html?category=Sports">Sports</a>
+                <a href="shop.html?category=Casual">Casual</a>
+                <a href="shop.html?category=Baby%20Shoes">Baby Shoes</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Account</h3>
+
+                <a href="account.html">My Account</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>PN Shoes</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#featured">Featured</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 PN Shoes Store. All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+```

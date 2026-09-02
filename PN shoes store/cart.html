@@ -1,0 +1,254 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Cart | PN Shoes Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+    Free delivery on selected orders • PN Shoes Store
+</div>
+
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            PN <span>SHOES</span>
+        </a>
+
+
+        <nav id="mainNav">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="index.html#categories">Categories</a>
+                </li>
+
+                <li>
+                    <a href="index.html#featured">Featured</a>
+                </li>
+
+                <li>
+                    <a href="account.html">Account</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a
+                href="cart.html"
+                class="icon-btn cart-icon"
+            >
+                🛒
+                <span
+                    id="cartCount"
+                    class="cart-count"
+                >
+                    0
+                </span>
+            </a>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <small>
+                PN SHOES
+            </small>
+
+            <h1>
+                Shopping Cart
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="cart-layout">
+
+
+                <div class="cart-items">
+
+                    <div
+                        id="cartItems"
+                        class="cart-list"
+                    >
+                        <!-- Cart items loaded by cart.js -->
+                    </div>
+
+
+                    <div
+                        id="emptyCart"
+                        class="empty-state"
+                        style="display:none;"
+                    >
+
+                        <div class="empty-icon">
+                            🛒
+                        </div>
+
+                        <h2>
+                            Your cart is empty
+                        </h2>
+
+                        <p>
+                            Find something you love and add it to your cart.
+                        </p>
+
+                        <a
+                            href="shop.html"
+                            class="btn btn-primary"
+                        >
+                            Start Shopping
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <aside class="cart-summary">
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="cartSubtotal">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong id="cartDelivery">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="cartTotal">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <a
+                        href="checkout.html"
+                        class="btn btn-primary checkout-btn"
+                    >
+                        Proceed to Checkout
+                    </a>
+
+
+                    <a
+                        href="shop.html"
+                        class="continue-shopping"
+                    >
+                        ← Continue Shopping
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-bottom">
+            © 2026 PN Shoes Store. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>
+```
