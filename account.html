@@ -1,0 +1,245 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Account | PN Shoes Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+    PN Shoes Store • My Account
+</div>
+
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            PN <span>SHOES</span>
+        </a>
+
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <small>
+                PN SHOES
+            </small>
+
+            <h1>
+                My Account
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="account-layout">
+
+
+                <aside class="account-sidebar">
+
+                    <div class="account-profile">
+
+                        <div class="profile-icon">
+                            👤
+                        </div>
+
+                        <h2 id="accountName">
+                            Customer
+                        </h2>
+
+                        <p id="accountEmail">
+                            Guest
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="account-menu active"
+                        data-section="profile"
+                    >
+                        Profile
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="account-menu"
+                        data-section="orders"
+                    >
+                        Orders
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="account-menu"
+                        data-section="settings"
+                    >
+                        Settings
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="logoutButton"
+                        class="account-menu logout"
+                    >
+                        Logout
+                    </button>
+
+                </aside>
+
+
+                <div class="account-content">
+
+
+                    <section
+                        id="profileSection"
+                        class="account-panel"
+                    >
+
+                        <h2>
+                            Profile
+                        </h2>
+
+                        <p>
+                            Welcome to your PN Shoes account.
+                        </p>
+
+                    </section>
+
+
+                    <section
+                        id="ordersSection"
+                        class="account-panel"
+                        style="display:none;"
+                    >
+
+                        <h2>
+                            My Orders
+                        </h2>
+
+                        <div id="orderHistory">
+
+                            <p>
+                                You have no orders yet.
+                            </p>
+
+                            <a
+                                href="shop.html"
+                                class="btn btn-primary"
+                            >
+                                Start Shopping
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <section
+                        id="settingsSection"
+                        class="account-panel"
+                        style="display:none;"
+                    >
+
+                        <h2>
+                            Account Settings
+                        </h2>
+
+                        <p>
+                            Manage your account information.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-bottom">
+            © 2026 PN Shoes Store. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
+```

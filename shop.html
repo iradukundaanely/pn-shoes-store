@@ -1,0 +1,451 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop | PN Shoes Store</title>
+
+    <meta
+        name="description"
+        content="Shop all PN Shoes footwear including sneakers, running shoes, sports shoes, casual shoes and baby shoes."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="top-bar">
+    Free delivery on selected orders • PN Shoes Store
+</div>
+
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            PN <span>SHOES</span>
+        </a>
+
+
+        <nav id="mainNav">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="shop.html"
+                        class="active"
+                    >
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#categories">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#featured">
+                        Featured
+                    </a>
+                </li>
+
+                <li>
+                    <a href="account.html">
+                        Account
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a
+                href="shop.html"
+                class="icon-btn"
+            >
+                🔍
+            </a>
+
+            <a
+                href="cart.html"
+                class="icon-btn cart-icon"
+            >
+                🛒
+                <span
+                    id="cartCount"
+                    class="cart-count"
+                >
+                    0
+                </span>
+            </a>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+    <!-- SHOP HERO -->
+
+    <section class="shop-hero">
+
+        <div class="container">
+
+            <small>
+                PN SHOES COLLECTION
+            </small>
+
+            <h1>
+                Shop Shoes
+            </h1>
+
+            <p>
+                Find your next favorite pair.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOP -->
+
+    <section class="section">
+
+        <div class="container">
+
+
+            <div class="shop-toolbar">
+
+
+                <div class="search-box">
+
+                    <label
+                        for="searchInput"
+                        class="sr-only"
+                    >
+                        Search shoes
+                    </label>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search shoes..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="searchButton"
+                        type="button"
+                    >
+                        🔍
+                    </button>
+
+                </div>
+
+
+                <div class="sort-box">
+
+                    <label for="sortSelect">
+                        Sort:
+                    </label>
+
+                    <select id="sortSelect">
+
+                        <option value="default">
+                            Featured
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="name">
+                            Name: A-Z
+                        </option>
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="category-filters">
+
+                <button
+                    class="filter-btn active"
+                    data-category="All"
+                    type="button"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Running"
+                    type="button"
+                >
+                    Running
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Sneakers"
+                    type="button"
+                >
+                    Sneakers
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Sports"
+                    type="button"
+                >
+                    Sports
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Casual"
+                    type="button"
+                >
+                    Casual
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Baby Shoes"
+                    type="button"
+                >
+                    Baby Shoes
+                </button>
+
+            </div>
+
+
+            <!-- RESULTS -->
+
+            <div class="shop-results">
+
+                <div>
+
+                    <h2>
+                        Our Shoes
+                    </h2>
+
+                    <p id="resultsCount">
+                        Showing products
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div
+                id="productsGrid"
+                class="products-grid"
+            ></div>
+
+
+            <!-- EMPTY -->
+
+            <div
+                id="emptyState"
+                class="empty-state"
+                style="display:none;"
+            >
+
+                <div class="empty-icon">
+                    👟
+                </div>
+
+                <h2>
+                    No shoes found
+                </h2>
+
+                <p>
+                    Try another search or category.
+                </p>
+
+                <button
+                    id="clearFilters"
+                    type="button"
+                    class="btn btn-primary"
+                >
+                    Clear Filters
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMOTION -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="promotion-box">
+
+                <small>
+                    PN SPECIAL
+                </small>
+
+                <h2>
+                    Find your perfect pair.
+                </h2>
+
+                <p>
+                    Shop sneakers, sports shoes,
+                    casual footwear and baby shoes.
+                </p>
+
+                <a
+                    href="cart.html"
+                    class="btn btn-accent"
+                >
+                    View Cart
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>PN SHOES</h3>
+
+                <p>
+                    Modern footwear for everyday life,
+                    sports, running, street style and
+                    little feet.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="shop.html">All Shoes</a>
+                <a href="shop.html?category=Running">Running</a>
+                <a href="shop.html?category=Sneakers">Sneakers</a>
+                <a href="shop.html?category=Sports">Sports</a>
+                <a href="shop.html?category=Casual">Casual</a>
+                <a href="shop.html?category=Baby%20Shoes">Baby Shoes</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Account</h3>
+
+                <a href="account.html">My Account</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>PN Shoes</h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#featured">Featured</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 PN Shoes Store. All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+```
